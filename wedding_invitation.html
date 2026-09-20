@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju & Sreenandana - Wedding Invitation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            light: '#e1e5dd',
+                            DEFAULT: '#9ab09a',
+                            dark: '#687b68'
+                        },
+                        cream: '#fdfbf7',
+                        earth: '#8b7355',
+                        textDark: '#2c3328'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        script: ['"Great Vibes"', 'cursive'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(104, 123, 104, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fdfbf7;
+            color: #2c3328;
+            overflow-x: hidden;
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            will-change: opacity, visibility;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .arch-image {
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+        }
+
+        .leaf-divider {
+            width: 150px;
+            height: auto;
+            margin: 2rem auto;
+            opacity: 0.7;
+        }
+
+        /* Subtle parallax for hero */
+        .hero-bg {
+            background-image: radial-gradient(circle at center, rgba(154, 176, 154, 0.1) 0%, rgba(253, 251, 247, 1) 100%);
+        }
+    </style>
+</head>
+<body class="font-serif antialiased hero-bg">
+
+    <section class="relative min-h-[90vh] flex flex-col items-center justify-center px-4 pt-16 pb-12 fade-in-section is-visible">
+        <div class="text-center z-10 mb-8">
+            <h3 class="font-sans tracking-[0.2em] text-sage-dark text-sm uppercase mb-4">You are invited</h3>
+            <h1 class="font-script text-6xl md:text-8xl text-textDark mb-2 leading-tight">Sanju <span class="text-sage-dark">&</span> Sreenandana</h1>
+            <p class="text-lg md:text-xl text-earth italic mt-4">Are getting married</p>
+        </div>
+
+        <div class="relative w-full max-w-lg mx-auto group">
+            <div class="absolute inset-0 bg-sage rounded-t-full transform translate-y-4 translate-x-4 opacity-30 transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+            <img src="IMG_3826.jpg" alt="Sanju and Sreenandana" class="relative z-10 w-full object-cover arch-image shadow-soft h-[60vh] md:h-[70vh] border-8 border-cream">
+        </div>
+        
+        <div class="mt-12 text-center text-sage-dark font-sans tracking-widest uppercase">
+            Sunday <span class="mx-2 text-earth">•</span> 08 Nov 2026
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-cream fade-in-section text-center relative">
+        <svg class="leaf-divider" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 15C50 15 40 5 25 5C10 5 5 15 5 15C5 15 10 25 25 25C40 25 50 15 50 15Z" stroke="#9ab09a" stroke-width="1"/>
+            <path d="M50 15C50 15 60 5 75 5C90 5 95 15 95 15C95 15 90 25 75 25C60 25 50 15 50 15Z" stroke="#9ab09a" stroke-width="1"/>
+        </svg>
+
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-script text-5xl md:text-6xl text-sage-dark mb-8">Join us to celebrate</h2>
+            <p class="font-sans text-lg md:text-xl text-textDark leading-relaxed mb-12 font-light">
+                We request the honor of your presence as we begin our new life together. <br class="hidden md:block">
+                Please join us in sharing our happiness on this auspicious occasion.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left bg-white p-8 md:p-12 shadow-soft rounded-3xl border border-sage-light">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <div class="w-12 h-12 bg-sage-light rounded-full flex items-center justify-center mb-4 text-sage-dark">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-2 text-earth">When</h3>
+                    <p class="font-sans text-textDark mb-1">Sunday, 08th November 2026</p>
+                    <p class="font-sans text-textDark font-semibold">Muhurtham: 12.15 pm - 12.45 pm</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <div class="w-12 h-12 bg-sage-light rounded-full flex items-center justify-center mb-4 text-sage-dark">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-2 text-earth">Where</h3>
+                    <p class="font-sans text-textDark mb-1">Preethi Convention Centre</p>
+                    <p class="font-sans text-textDark mb-6">Erezha South, Chettikulangara</p>
+                    
+                    <a href="https://maps.app.goo.gl/Kpxu6YftQhX9xAqe7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-sage-dark hover:bg-sage text-white font-sans text-sm tracking-widest uppercase rounded-full transition-colors duration-300 shadow-md">
+                        View on Map
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-sage text-white fade-in-section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-script text-4xl md:text-5xl mb-10 text-cream">The Countdown Begins</h2>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8" id="countdown">
+                <div class="bg-sage-dark bg-opacity-40 backdrop-blur-sm rounded-2xl p-4 w-24 md:w-32 border border-sage-light border-opacity-20 shadow-soft">
+                    <span id="days" class="block text-4xl md:text-5xl font-serif mb-1 text-cream">00</span>
+                    <span class="text-xs md:text-sm font-sans tracking-widest uppercase text-sage-light">Days</span>
+                </div>
+                <div class="bg-sage-dark bg-opacity-40 backdrop-blur-sm rounded-2xl p-4 w-24 md:w-32 border border-sage-light border-opacity-20 shadow-soft">
+                    <span id="hours" class="block text-4xl md:text-5xl font-serif mb-1 text-cream">00</span>
+                    <span class="text-xs md:text-sm font-sans tracking-widest uppercase text-sage-light">Hours</span>
+                </div>
+                <div class="bg-sage-dark bg-opacity-40 backdrop-blur-sm rounded-2xl p-4 w-24 md:w-32 border border-sage-light border-opacity-20 shadow-soft">
+                    <span id="minutes" class="block text-4xl md:text-5xl font-serif mb-1 text-cream">00</span>
+                    <span class="text-xs md:text-sm font-sans tracking-widest uppercase text-sage-light">Minutes</span>
+                </div>
+                <div class="bg-sage-dark bg-opacity-40 backdrop-blur-sm rounded-2xl p-4 w-24 md:w-32 border border-sage-light border-opacity-20 shadow-soft">
+                    <span id="seconds" class="block text-4xl md:text-5xl font-serif mb-1 text-cream">00</span>
+                    <span class="text-xs md:text-sm font-sans tracking-widest uppercase text-sage-light">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 bg-cream fade-in-section">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-script text-5xl md:text-6xl text-sage-dark mb-4">Capturing Moments</h2>
+            <p class="font-sans text-earth mb-12 tracking-wide text-sm md:text-base uppercase">A glimpse into our story</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="group overflow-hidden rounded-3xl shadow-soft">
+                    <img src="IMG_3819.jpg" alt="Sanju and Sreenandana Pastoral Setting" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-soft md:mt-12">
+                    <img src="IMG_3824.jpg" alt="Sanju and Sreenandana Holding Hands" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group overflow-hidden rounded-3xl shadow-soft">
+                    <img src="IMG_3828.jpg" alt="Sanju and Sreenandana Walking Together" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-textDark text-cream text-center py-12 px-4">
+        <h2 class="font-script text-4xl mb-4 text-sage-light">Sanju & Sreenandana</h2>
+        <p class="font-sans text-sm text-sage-light opacity-75 mb-6">We can't wait to celebrate with you.</p>
+        <div class="text-xs font-sans tracking-widest opacity-50 uppercase">08 • 11 • 2026</div>
+    </footer>
+
+    <script>
+        // --- Countdown Timer Logic ---
+        // Target: November 8, 2026, 12:15:00 PM
+        const countDownDate = new Date("Nov 8, 2026 12:15:00").getTime();
+
+        const timerInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in elements with id
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            // If the count down is over
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("countdown").innerHTML = "<div class='text-3xl font-serif text-cream mt-4'>Today is the Day!</div>";
+            }
+        }, 1000);
+
+        // --- Scroll Reveal Animation Logic ---
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
